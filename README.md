@@ -1,11 +1,15 @@
 # Multi Entropy Numerics
 
-This repository is a curated public subset extracted from a larger research workspace.
-It is part of the paper "Probing chiral topological states with permutation defects" (arXiv:2512.04649).
+This repository contains all code used to produce the figures in the paper "Probing chiral topological states with permutation defects" (arXiv:2512.04649). 
+There are essentially two independent packages here, one for the Kitaev Honeycomb model (free fermion simulations) and one for Monte-Carlo sampling of a semion wavefunciton. Both provide functionality for computing multi-entropy expectation values on said wavefunctions. 
+
+The code provided here was written for internal use, and is very much not properly documented. If you are interested in using this for your project, feel free to reach out for any question!
 
 ## Contents
 - kitaev_honeycomb/: Julia code and notebook for Kitaev honeycomb model calculations.
+    These are free-fermion calculation, and can be run effectively on a personal laptop up to large (n=10) number of replicas.
 - semion/: Python scripts and notebook for semion sampling and scans.
+    This provides Monte-Carlo sampling (using the NetKet interface) for a Laughlin $\nu=1/2$ wavefunction. As a result of the exponential time complexity, this calculation is feasable only for low (n=3) number of replicas, and was run on parallel GPUs.
 
 ## Structure
 - kitaev_honeycomb/
