@@ -1,0 +1,12 @@
+name = "KitaevHoneycomb"
+uuid = "0d376505-3411-41ec-8eb1-f646872e1dfb"
+authors = ["ysheffer <yarden.sheffer@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[compat]
+LinearAlgebra = "1.11.0"
+Test = "1.11.0"
